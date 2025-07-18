@@ -37,19 +37,19 @@ class ProductTest {
     }
 
     @Test
-    void testSetID(){
+    void testGetSetID(){
         product.setId(99L);
         assertEquals(99L, product.getId());
     }
 
     @Test
-    void testSetName(){
+    void testGetSetName(){
         product.setName("Silver");
         assertEquals("Silver", product.getName());
     }
 
     @Test
-    void testSetPrice(){
+    void testGetSetPrice(){
         product.setPrice(500);
         assertEquals(500, product.getPrice());
     }

@@ -1,4 +1,4 @@
-package com.example.demo.myfirstapi;
+package com.example.demo.myfirstapi.model;
 
 import java.util.Objects; // Used for Objects.hash and Objects.equals
 
