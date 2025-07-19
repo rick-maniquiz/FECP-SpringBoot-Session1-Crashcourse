@@ -21,12 +21,13 @@ class ProductRepositoryTest {
 
     @Test
     void shouldReturnAllProducts(){
-        assertTrue(productRepository.findAll().toString().contains("Laptop"));
-        assertTrue(productRepository.findAll().toString().contains("1200"));
-        assertTrue(productRepository.findAll().toString().contains("Keyboard"));
-        assertTrue(productRepository.findAll().toString().contains("75"));
-        assertTrue(productRepository.findAll().toString().contains("Mouse"));
-        assertTrue(productRepository.findAll().toString().contains("25"));
+        String findAllStringOutput = productRepository.findAll().toString();
+        assertTrue(findAllStringOutput.contains("Laptop"));
+        assertTrue(findAllStringOutput.contains("1200"));
+        assertTrue(findAllStringOutput.contains("Keyboard"));
+        assertTrue(findAllStringOutput.contains("75"));
+        assertTrue(findAllStringOutput.contains("Mouse"));
+        assertTrue(findAllStringOutput.contains("25"));
     }
 
     @Test
